@@ -1,19 +1,24 @@
 {
   "app": "claude-workbench",
-  "version": "1.1.27",
-  "publishedAt": "2026-11-08T11:20:00Z",
-  "notes": "新增：自动识别 Chrome Beta / Dev / SxS（Canary）的默认安装路径。朋友用测试版 Chrome 时，顶栏浏览器按钮可以直接找到，不需要再手动选目录。\n\n客户端其余功能与 1.1.26 一致；更新后重启客户端生效。\n",
+  "version": "1.1.28",
+  "publishedAt": "2026-11-08T11:25:25Z",
+  "notes": "修复：托盘退出时偶发 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR 蓝屏。客户端主界面改为不使用 GPU 进程（软件合成），避免退出时销毁 GPU 上下文触发显卡/虚拟显示器驱动问题；桌宠原本已关闭硬件加速。\n\n建议同时更新 NVIDIA 显卡驱动；如果装了 MuMu、GameViewer 等虚拟显示器，不使用时建议停用，它们和旧显卡驱动是 0x119 的常见诱因。\n\n客户端其余功能与 1.1.27 一致；更新后重启客户端生效。\n",
   "patch": {
     "fromVersion": "1.0.0",
-    "url": "patch-1.1.27.zip",
-    "size": 4549463,
-    "sha256": "e9931067764241b1555868aec757be5b8d5ced8838e41e1514109a1ef990e54d"
+    "url": "patch-1.1.28.zip",
+    "size": 4550025,
+    "sha256": "33be38912dc74ffb69ff5e31ea249b1122ea0e8876d296197853cb4ca212981d"
   },
   "releases": [
     {
+      "version": "1.1.28",
+      "date": "2026-11-08",
+      "notes": "修复：托盘退出时偶发 0x119 VIDEO_SCHEDULER_INTERNAL_ERROR 蓝屏。客户端主界面改为不使用 GPU 进程（软件合成），避免退出时销毁 GPU 上下文触发显卡/虚拟显示器驱动问题；桌宠原本已关闭硬件加速。\n\n建议同时更新 NVIDIA 显卡驱动；如果装了 MuMu、GameViewer 等虚拟显示器，不使用时建议停用，它们和旧显卡驱动是 0x119 的常见诱因。\n\n客户端其余功能与 1.1.27 一致；更新后重启客户端生效。\n"
+    },
+    {
       "version": "1.1.27",
       "date": "2026-11-08",
-      "notes": "新增：自动识别 Chrome Beta / Dev / SxS（Canary）的默认安装路径。朋友用测试版 Chrome 时，顶栏浏览器按钮可以直接找到，不需要再手动选目录。\n\n客户端其余功能与 1.1.26 一致；更新后重启客户端生效。\n"
+      "notes": "新增：自动识别 Chrome Beta / Dev / SxS（Canary）的默认安装路径。朋友用测试版 Chrome 时，顶栏浏览器按钮可以直接找到，不需要再手动选目录。\n\n客户端其余功能与 1.1.26 一致；更新后重启客户端生效。"
     },
     {
       "version": "1.1.26",
