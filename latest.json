@@ -1,19 +1,24 @@
 {
   "app": "claude-workbench",
-  "version": "1.1.26",
-  "publishedAt": "2026-11-08T10:52:47Z",
-  "notes": "修复：Git Bash 找不到 playwright-cli 命令，导致模型误判浏览器工具未安装，退回无头 Chrome/转写。更新包补充无后缀 shim，Git Bash 里可直接运行 playwright-cli。\n\n浏览器技能里的 chrome-browser.js 路径改为工作台自动设置的环境变量，不再写死某个盘符；朋友装在 D 盘或其它目录也能用真实 Chrome。已安装过旧版技能时，客户端启动会自动更新。\n\n客户端其余功能与 1.1.25 一致；更新后重启客户端生效。\n",
+  "version": "1.1.27",
+  "publishedAt": "2026-11-08T11:20:00Z",
+  "notes": "新增：自动识别 Chrome Beta / Dev / SxS（Canary）的默认安装路径。朋友用测试版 Chrome 时，顶栏浏览器按钮可以直接找到，不需要再手动选目录。\n\n客户端其余功能与 1.1.26 一致；更新后重启客户端生效。\n",
   "patch": {
     "fromVersion": "1.0.0",
-    "url": "patch-1.1.26.zip",
-    "size": 4549664,
-    "sha256": "9e81a6f3d2f23870ed976b96bd399f7981b084c7040d21d05f911a99142f8705"
+    "url": "patch-1.1.27.zip",
+    "size": 4549463,
+    "sha256": "e9931067764241b1555868aec757be5b8d5ced8838e41e1514109a1ef990e54d"
   },
   "releases": [
     {
+      "version": "1.1.27",
+      "date": "2026-11-08",
+      "notes": "新增：自动识别 Chrome Beta / Dev / SxS（Canary）的默认安装路径。朋友用测试版 Chrome 时，顶栏浏览器按钮可以直接找到，不需要再手动选目录。\n\n客户端其余功能与 1.1.26 一致；更新后重启客户端生效。\n"
+    },
+    {
       "version": "1.1.26",
       "date": "2026-11-08",
-      "notes": "修复：Git Bash 找不到 playwright-cli 命令，导致模型误判浏览器工具未安装，退回无头 Chrome/转写。更新包补充无后缀 shim，Git Bash 里可直接运行 playwright-cli。\n\n浏览器技能里的 chrome-browser.js 路径改为工作台自动设置的环境变量，不再写死某个盘符；朋友装在 D 盘或其它目录也能用真实 Chrome。已安装过旧版技能时，客户端启动会自动更新。\n\n客户端其余功能与 1.1.25 一致；更新后重启客户端生效。\n"
+      "notes": "修复：Git Bash 找不到 playwright-cli 命令，导致模型误判浏览器工具未安装，退回无头 Chrome/转写。更新包补充无后缀 shim，Git Bash 里可直接运行 playwright-cli。\n\n浏览器技能里的 chrome-browser.js 路径改为工作台自动设置的环境变量，不再写死某个盘符；朋友装在 D 盘或其它目录也能用真实 Chrome。已安装过旧版技能时，客户端启动会自动更新。\n\n客户端其余功能与 1.1.25 一致；更新后重启客户端生效。"
     },
     {
       "version": "1.1.25",
