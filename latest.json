@@ -5,7 +5,7 @@
   "notes": "统一客户端 1.2.22：\n\n- 去掉窗口聚焦/重新可见时自动强制检查更新，避免切窗口太频繁触发网络请求。\n- 只保留启动检查、每 30 分钟一次，以及点开更新框时强制检查。\n- 清理未使用的更新检查时间缓存变量。\n- 包含 1.2.21 的更新框强制刷新、1.2.20 的悬停框收紧和深色浮层。\n- 手机本机页对应 APK 2.4.59；PC 端更新客户端后重启工作台。\n",
   "patch": {
     "fromVersion": "1.0.0",
-    "url": "patch-1.2.22.zip",
+    "url": "https://ghfast.top/https://raw.githubusercontent.com/enneliang-stack/claude-workbench-update/main/patch-1.2.22.zip",
     "size": 16863825,
     "sha256": "8282b613f329dada4bb41961215fa291e5a7e578b9e4c34eae1eea9acacd84ff"
   },
