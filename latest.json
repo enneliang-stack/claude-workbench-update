@@ -1,21 +1,20 @@
 {
   "app": "claude-workbench",
-  "version": "1.2.24",
-  "publishedAt": "2026-11-13T06:48:28Z",
-  "notes": "统一客户端 1.2.24：\n\n- 更新器增加下载重试和双地址兜底：ghfast 失败会尝试直连 GitHub，404/网络错误会自动重试。\n- 更新检查增加并发保护，启动检查、定时检查和点开更新框不会重复发请求。\n- 桌宠更新包从客户端补丁中分离：客户端补丁不再携带约 15MB 的 dsh-pet 文件。\n- latest.json 新增 dshPet 信息；更新器会检查本地桌宠版本，已经是最新就跳过，不是最新才单独下载桌宠包并和客户端一起应用。\n- 手机本机页对应 APK 2.4.59；PC 端更新客户端后重启工作台。\n",
+  "version": "1.2.25",
+  "publishedAt": "2026-11-13T07:09:28Z",
+  "notes": "统一客户端 1.2.25：\n\n- 1.2.24 的桌宠分离方案先回退：客户端补丁重新包含 dsh-pet 0.4.7，旧版本客户端可以直接一步更新到 1.2.25。\n- 保留 1.2.24 的更新器重试、双地址兜底和更新检查并发保护。\n- 桌宠分离以后需要时再做。\n- 手机本机页对应 APK 2.4.59；PC 端更新客户端后重启工作台。\n",
   "patch": {
     "fromVersion": "1.0.0",
-    "url": "https://ghfast.top/https://raw.githubusercontent.com/enneliang-stack/claude-workbench-update/main/patch-1.2.24.zip",
-    "size": 5222367,
-    "sha256": "7301eb971a777c79a033735c0b3cc783e3bbf11aceeddbfc75ffa0b5588875e9"
-  },
-  "dshPet": {
-    "version": "0.4.7",
-    "url": "https://ghfast.top/https://raw.githubusercontent.com/enneliang-stack/claude-workbench-update/main/dsh-pet-0.4.7.zip",
-    "size": 11642602,
-    "sha256": "63beaea6088df07f34c42960fd5a3819c47c992f761d0430788211749114a28d"
+    "url": "https://ghfast.top/https://raw.githubusercontent.com/enneliang-stack/claude-workbench-update/main/patch-1.2.25.zip",
+    "size": 16864721,
+    "sha256": "a53d1708499a8da38b8191507d58c67fe76f625ed38d138a87b227d5eb06e727"
   },
   "releases": [
+    {
+      "version": "1.2.25",
+      "date": "2026-11-13",
+      "notes": "统一客户端 1.2.25：\n\n- 1.2.24 的桌宠分离方案先回退：客户端补丁重新包含 dsh-pet 0.4.7，旧版本客户端可以直接一步更新到 1.2.25。\n- 保留 1.2.24 的更新器重试、双地址兜底和更新检查并发保护。\n- 桌宠分离以后需要时再做。\n- 手机本机页对应 APK 2.4.59；PC 端更新客户端后重启工作台。\n"
+    },
     {
       "version": "1.2.24",
       "date": "2026-11-13",
