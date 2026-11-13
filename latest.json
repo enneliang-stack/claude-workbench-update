@@ -1,15 +1,26 @@
 {
   "app": "claude-workbench",
-  "version": "1.2.23",
-  "publishedAt": "2026-11-13T06:36:41Z",
-  "notes": "统一客户端 1.2.23：\n\n- 修复窄窗口下悬停浮层被压成一字一行的问题：改为按内容取宽，再用窗口宽度限制最大宽度。\n- 单行提示保持紧凑；长提示在窗口内正常换行。\n- 包含 1.2.22 的更新检查刷新、1.2.20 的悬停框样式。\n- 手机本机页对应 APK 2.4.59；PC 端更新客户端后重启工作台。\n",
+  "version": "1.2.24",
+  "publishedAt": "2026-11-13T06:48:28Z",
+  "notes": "统一客户端 1.2.24：\n\n- 更新器增加下载重试和双地址兜底：ghfast 失败会尝试直连 GitHub，404/网络错误会自动重试。\n- 更新检查增加并发保护，启动检查、定时检查和点开更新框不会重复发请求。\n- 桌宠更新包从客户端补丁中分离：客户端补丁不再携带约 15MB 的 dsh-pet 文件。\n- latest.json 新增 dshPet 信息；更新器会检查本地桌宠版本，已经是最新就跳过，不是最新才单独下载桌宠包并和客户端一起应用。\n- 手机本机页对应 APK 2.4.59；PC 端更新客户端后重启工作台。\n",
   "patch": {
     "fromVersion": "1.0.0",
-    "url": "patch-1.2.23.zip",
-    "size": 16863744,
-    "sha256": "7cf13546c8d3a5c0bef6cd1bc806bac0fe14517064bebdc54b55ba69af9a43b3"
+    "url": "https://ghfast.top/https://raw.githubusercontent.com/enneliang-stack/claude-workbench-update/main/patch-1.2.24.zip",
+    "size": 5222367,
+    "sha256": "7301eb971a777c79a033735c0b3cc783e3bbf11aceeddbfc75ffa0b5588875e9"
+  },
+  "dshPet": {
+    "version": "0.4.7",
+    "url": "https://ghfast.top/https://raw.githubusercontent.com/enneliang-stack/claude-workbench-update/main/dsh-pet-0.4.7.zip",
+    "size": 11642602,
+    "sha256": "63beaea6088df07f34c42960fd5a3819c47c992f761d0430788211749114a28d"
   },
   "releases": [
+    {
+      "version": "1.2.24",
+      "date": "2026-11-13",
+      "notes": "统一客户端 1.2.24：\n\n- 更新器增加下载重试和双地址兜底：ghfast 失败会尝试直连 GitHub，404/网络错误会自动重试。\n- 更新检查增加并发保护，启动检查、定时检查和点开更新框不会重复发请求。\n- 桌宠更新包从客户端补丁中分离：客户端补丁不再携带约 15MB 的 dsh-pet 文件。\n- latest.json 新增 dshPet 信息；更新器会检查本地桌宠版本，已经是最新就跳过，不是最新才单独下载桌宠包并和客户端一起应用。\n- 手机本机页对应 APK 2.4.59；PC 端更新客户端后重启工作台。\n"
+    },
     {
       "version": "1.2.23",
       "date": "2026-11-13",
