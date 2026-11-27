@@ -1,22 +1,27 @@
 {
   "app": "claude-workbench",
-  "version": "1.2.67",
-  "publishedAt": "2026-11-27T10:39:14Z",
-  "notes": "统一客户端 1.2.67：\n\n- 修复 CLI 升级成功后仍留下黑色控制台的问题：升级启动器结束后自动关闭。\n- 修复重启工作台时因找错启动界面 VBS 路径而多开控制台：改为 claude-gui\\启动界面.vbs 隐藏启动，找不到时隐藏运行启动工作台.cmd。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。\n",
+  "version": "1.2.68",
+  "publishedAt": "2026-11-27T11:49:45Z",
+  "notes": "统一客户端 1.2.68：\n\n- CLI 升级前自动读取 Windows 系统代理（HTTP/HTTPS/SOCKS），传给 Claude Code 安装器，解决已开 VPN 但 CLI 仍直连超时的问题。\n- claude install 改为把 --force 放在目标版本前，确保强制参数被识别；失败提示补充 VPN/代理检查说明。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。\n",
   "patch": {
     "fromVersion": "1.0.0",
-    "url": "patch-1.2.67.zip",
-    "size": 17101810,
-    "sha256": "31bfed0529030cba473d8236e1baf8d9838549cffb10b42866fdba2d5054c98e"
+    "url": "patch-1.2.68.zip",
+    "size": 17102898,
+    "sha256": "bb6b009420eab09e073c225706cd773bc8d92b4974104aa0f47b599548c1e415"
   },
   "claudeCode": {
     "version": "2.1.332"
   },
   "releases": [
     {
+      "version": "1.2.68",
+      "date": "2026-11-27",
+      "notes": "统一客户端 1.2.68：\n\n- CLI 升级前自动读取 Windows 系统代理（HTTP/HTTPS/SOCKS），传给 Claude Code 安装器，解决已开 VPN 但 CLI 仍直连超时的问题。\n- claude install 改为把 --force 放在目标版本前，确保强制参数被识别；失败提示补充 VPN/代理检查说明。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。\n"
+    },
+    {
       "version": "1.2.67",
       "date": "2026-11-27",
-      "notes": "统一客户端 1.2.67：\n\n- 修复 CLI 升级成功后仍留下黑色控制台的问题：升级启动器结束后自动关闭。\n- 修复重启工作台时因找错启动界面 VBS 路径而多开控制台：改为 claude-gui\\启动界面.vbs 隐藏启动，找不到时隐藏运行启动工作台.cmd。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。\n"
+      "notes": "统一客户端 1.2.67：\n\n- 修复 CLI 升级成功后仍留下黑色控制台的问题：升级启动器结束后自动关闭。\n- 修复重启工作台时因找错启动界面 VBS 路径而多开控制台：改为 claude-gui\\启动界面.vbs 隐藏启动，找不到时隐藏运行启动工作台.cmd。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。"
     },
     {
       "version": "1.2.66",
