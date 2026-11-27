@@ -1,22 +1,27 @@
 {
   "app": "claude-workbench",
-  "version": "1.2.68",
-  "publishedAt": "2026-11-27T11:49:45Z",
-  "notes": "统一客户端 1.2.68：\n\n- CLI 升级前自动读取 Windows 系统代理（HTTP/HTTPS/SOCKS），传给 Claude Code 安装器，解决已开 VPN 但 CLI 仍直连超时的问题。\n- claude install 改为把 --force 放在目标版本前，确保强制参数被识别；失败提示补充 VPN/代理检查说明。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。\n",
+  "version": "1.2.69",
+  "publishedAt": "2026-11-27T11:58:10Z",
+  "notes": "统一客户端 1.2.69：\n\n- 更新清单 latest.json 增加 ghfast/直连候选地址，每个地址重试 2 次，减少清单下载超时导致整体更新失败。\n- 补丁下载的 HTTP 兜底超时放宽到 600 秒，慢网络下不再轻易超时；仍保留 BITS 优先、镜像互备和 SHA-256 校验。\n- 失败日志区分“读取更新清单”和“下载更新包”，并记录最后错误，便于判断是清单还是补丁超时。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。\n",
   "patch": {
     "fromVersion": "1.0.0",
-    "url": "patch-1.2.68.zip",
-    "size": 17102898,
-    "sha256": "bb6b009420eab09e073c225706cd773bc8d92b4974104aa0f47b599548c1e415"
+    "url": "patch-1.2.69.zip",
+    "size": 17103144,
+    "sha256": "8e4cf8ebccb8af557e11f166a8869ceb4da2490a95d7c30fa593a7c4fd7ea57b"
   },
   "claudeCode": {
     "version": "2.1.332"
   },
   "releases": [
     {
+      "version": "1.2.69",
+      "date": "2026-11-27",
+      "notes": "统一客户端 1.2.69：\n\n- 更新清单 latest.json 增加 ghfast/直连候选地址，每个地址重试 2 次，减少清单下载超时导致整体更新失败。\n- 补丁下载的 HTTP 兜底超时放宽到 600 秒，慢网络下不再轻易超时；仍保留 BITS 优先、镜像互备和 SHA-256 校验。\n- 失败日志区分“读取更新清单”和“下载更新包”，并记录最后错误，便于判断是清单还是补丁超时。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。\n"
+    },
+    {
       "version": "1.2.68",
       "date": "2026-11-27",
-      "notes": "统一客户端 1.2.68：\n\n- CLI 升级前自动读取 Windows 系统代理（HTTP/HTTPS/SOCKS），传给 Claude Code 安装器，解决已开 VPN 但 CLI 仍直连超时的问题。\n- claude install 改为把 --force 放在目标版本前，确保强制参数被识别；失败提示补充 VPN/代理检查说明。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。\n"
+      "notes": "统一客户端 1.2.68：\n\n- CLI 升级前自动读取 Windows 系统代理（HTTP/HTTPS/SOCKS），传给 Claude Code 安装器，解决已开 VPN 但 CLI 仍直连超时的问题。\n- claude install 改为把 --force 放在目标版本前，确保强制参数被识别；失败提示补充 VPN/代理检查说明。\n- 客户端界面、CLI 检查和升级逻辑不变；手机 App 2.4.155 不变。\n- 更新后重启工作台。"
     },
     {
       "version": "1.2.67",
